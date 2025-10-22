@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Trains - Railway Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="top-bar">
+        Safety | Security | Punctuality
+    </div>
+
+    
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-img">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="30" r="28" fill="#1a4d8f" stroke="#ff6b35" stroke-width="2"/>
+                        <path d="M20 25 L40 25 L42 35 L18 35 Z" fill="white"/>
+                        <rect x="22" y="28" width="16" height="5" fill="#1a4d8f"/>
+                        <circle cx="24" cy="37" r="2" fill="white"/>
+                        <circle cx="36" cy="37" r="2" fill="white"/>
+                        <rect x="28" y="20" width="4" height="5" fill="white"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>INDIAN RAILWAYS</h1>
+                    <p>Safety | Security | Punctuality</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html" class="active">Search Trains</a></li>
+                    <li><a href="bookings.html">My Bookings</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <div class="container">
+        <h2 class="section-title">Search Trains</h2>
+        
+        <div class="search-container">
+            <form id="searchForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="source">From (Source Station)</label>
+                        <select id="source" required>
+                            <option value="">Select Source</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Lucknow">Lucknow</option>
+                        </select>
+                    </div>
+                    
+                    <div class="swap-icon" onclick="swapStations()" title="Swap stations">⇄</div>
+                    
+                    <div class="form-group">
+                        <label for="destination">To (Destination Station)</label>
+                        <select id="destination" required>
+                            <option value="">Select Destination</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Lucknow">Lucknow</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Journey Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="class">Class</label>
+                        <select id="class">
+                            <option value="All">All Classes</option>
+                            <option value="Sleeper">Sleeper (SL)</option>
+                            <option value="AC 3 Tier">AC 3 Tier (3A)</option>
+                            <option value="AC 2 Tier">AC 2 Tier (2A)</option>
+                            <option value="AC 1 Tier">AC 1 Tier (1A)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 25px;">
+                    <button type="submit" class="btn btn-primary">Search Trains</button>
+                </div>
+            </form>
+        </div>
+
+        
+        <div id="resultsSection" class="hidden">
+            <h2 class="section-title" style="margin-top: 50px;">Available Trains</h2>
+            <div id="trainsList" class="trains-list"></div>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Trains</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>&copy; 2025 | Railway Management System | Group 4</p>
+        </div>
+    </footer>
+
+    <script src="js/search-backend.js"></script>
+</body>
+</html>
+

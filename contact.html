@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Railway Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="top-bar">
+        Safety | Security | Punctuality
+    </div>
+
+    
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-img">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="30" r="28" fill="#1a4d8f" stroke="#ff6b35" stroke-width="2"/>
+                        <path d="M20 25 L40 25 L42 35 L18 35 Z" fill="white"/>
+                        <rect x="22" y="28" width="16" height="5" fill="#1a4d8f"/>
+                        <circle cx="24" cy="37" r="2" fill="white"/>
+                        <circle cx="36" cy="37" r="2" fill="white"/>
+                        <rect x="28" y="20" width="4" height="5" fill="white"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>INDIAN RAILWAYS</h1>
+                    <p>Safety | Security | Punctuality</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search Trains</a></li>
+                    <li><a href="bookings.html">My Bookings</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 40px; font-size: 16px;">
+            Have questions or feedback? We'd love to hear from you!
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1000px; margin: 0 auto;">
+            
+            <div class="contact-form">
+                <h3 style="color: #1a4d8f; margin-bottom: 25px; font-size: 22px;">Send us a Message</h3>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="Booking Issue">Booking Issue</option>
+                            <option value="Technical Support">Technical Support</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Suggestion">Suggestion</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            
+            <div>
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-bottom: 25px;">
+                    <h3 style="color: #1a4d8f; margin-bottom: 20px; font-size: 22px;">Contact Information</h3>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <div style="font-size: 24px; margin-right: 15px; color: #ff6b35;">📍</div>
+                            <div>
+                                <strong style="color: #1a4d8f;">Address</strong><br>
+                                <span style="color: #666;">Railway Management Office<br>
+                                Main Campus, University Road<br>
+                                City, State - 123456</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <div style="font-size: 24px; margin-right: 15px; color: #ff6b35;">📧</div>
+                            <div>
+                                <strong style="color: #1a4d8f;">Email</strong><br>
+                                <span style="color: #666;">support@railwaymanagement.com<br>
+                                info@railwaymanagement.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; align-items: center;">
+                            <div style="font-size: 24px; margin-right: 15px; color: #ff6b35;">📞</div>
+                            <div>
+                                <strong style="color: #1a4d8f;">Phone</strong><br>
+                                <span style="color: #666;">
+                                    +91 14646 (Within India)<br>
+                                    +91-8044647999 / +91-8035734999 (Outside India)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #e6f0ff; padding: 25px; border-radius: 12px;">
+                    <h4 style="color: #1a4d8f; margin-bottom: 15px;">Office Hours</h4>
+                    <div style="color: #666; line-height: 2;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                            <span><strong>Monday - Friday:</strong></span>
+                            <span>9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                            <span><strong>Saturday:</strong></span>
+                            <span>10:00 AM - 4:00 PM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span><strong>Sunday:</strong></span>
+                            <span>Closed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #fff3cd; padding: 20px; border-radius: 10px; margin-top: 25px; border-left: 4px solid #ff6b35;">
+                    <strong style="color: #1a4d8f;">💡 Quick Tip:</strong>
+                    <p style="color: #666; margin-top: 10px; line-height: 1.6;">
+                        For urgent booking issues, please include your PNR number in the message. 
+                        We typically respond within 24-48 hours.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div style="margin-top: 60px; max-width: 900px; margin-left: auto; margin-right: auto;">
+            <h3 style="color: #1a4d8f; margin-bottom: 25px; font-size: 28px; text-align: center;">Frequently Asked Questions</h3>
+            
+            <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 15px;">
+                <h4 style="color: #1a4d8f; margin-bottom: 10px;">How do I book a train ticket?</h4>
+                <p style="color: #666; line-height: 1.6;">
+                    Simply go to the "Search Trains" page, select your source and destination, choose your preferred train, 
+                    fill in passenger details, and confirm your booking. You'll receive a PNR number for your booking.
+                </p>
+            </div>
+
+            <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 15px;">
+                <h4 style="color: #1a4d8f; margin-bottom: 10px;">Can I cancel my booking?</h4>
+                <p style="color: #666; line-height: 1.6;">
+                    Yes! Visit the "My Bookings" page, find your booking, and click the "Cancel Booking" button. 
+                    Your booking will be cancelled immediately.
+                </p>
+            </div>
+
+            <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h4 style="color: #1a4d8f; margin-bottom: 10px;">How many passengers can I book for in one ticket?</h4>
+                <p style="color: #666; line-height: 1.6;">
+                    You can book tickets for up to 4 passengers in a single booking. 
+                    Use the "Add Another Passenger" button on the booking page.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Trains</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>&copy; 2025 | Railway Management System | Group 4</p>
+            <p style="margin-top: 10px; font-size: 14px; opacity: 0.9;">Developed as a project for academic purposes</p>
+        </div>
+    </footer>
+
+    <script>
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            
+            // Show success message
+            alert(
+                `Thank you for contacting us, ${name}!\n\n` +
+                `We have received your message regarding "${subject}".\n` +
+                `Our team will respond to ${email} within 24-48 hours.\n\n` +
+                `Have a great day!`
+            );
+            
+            // Reset form
+            this.reset();
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
+
